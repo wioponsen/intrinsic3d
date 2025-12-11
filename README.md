@@ -63,6 +63,9 @@ The following command installs the dependencies from the default Ubuntu reposito
 sudo apt install cmake libeigen3-dev libboost-dev libboost-filesystem-dev libboost-graph-dev libboost-system-dev libopencv-dev
 ```
 
+Updates:
+- [x] migrated to C++17 and later versions.
+
 Please install [Ceres Solver](http://ceres-solver.org/installation.html) using the following commands (if not installed already):
 ```
 # create third_party subdirectory (in Intrinsic3D root folder)
