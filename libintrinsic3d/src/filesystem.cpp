@@ -49,7 +49,7 @@ namespace Filesystem
 		if (!boost::filesystem::exists(p))
 			return false;
 		if (!boost::filesystem::is_directory(p))
-			p = p.branch_path();
+			p = p.parent_path(); // p = p.branch_path();
 		//std::cout << "path: " << p.string() << std::endl;
 		boost::filesystem::current_path(p);
 
