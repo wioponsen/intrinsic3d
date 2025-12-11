@@ -112,7 +112,7 @@ namespace nv
 namespace std
 {
 	template <>
-	struct hash<nv::Vec3i> : private std::unary_function<nv::Vec3i, size_t>
+	struct hash<nv::Vec3i> //: private std::unary_function<nv::Vec3i, size_t>  //remove private std::unary_function<nv::Vec3i, size_t> in C++11
 	{
 		size_t operator()(const nv::Vec3i& v) const
 		{
